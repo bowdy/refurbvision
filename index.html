@@ -51,28 +51,28 @@
 <body class="font-body text-charcoal bg-cream">
 
   <!-- ========== NAV ========== -->
-  <nav id="navbar" class="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-sm border-b border-cream-dark transition-shadow duration-300">
+  <nav id="navbar" class="fixed top-0 left-0 right-0 z-50 transition-all duration-300">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="flex items-center justify-between h-16 md:h-20">
         <!-- Logo -->
         <a href="#" class="flex items-center gap-2">
-          <div class="w-8 h-8 bg-navy rounded-lg flex items-center justify-center">
+          <div class="w-8 h-8 bg-white/20 backdrop-blur-sm rounded-lg flex items-center justify-center nav-logo-box">
             <span class="text-gold font-display font-bold text-lg">R</span>
           </div>
-          <span class="font-display font-bold text-xl text-navy">RefurbVision</span>
+          <span class="font-display font-bold text-xl text-white nav-brand transition-colors duration-300">RefurbVision</span>
         </a>
 
         <!-- Desktop Nav -->
         <div class="hidden md:flex items-center gap-8">
-          <a href="#how-it-works" class="text-sm font-medium text-charcoal/70 hover:text-navy transition-colors">How It Works</a>
-          <a href="#gallery" class="text-sm font-medium text-charcoal/70 hover:text-navy transition-colors">Gallery</a>
-          <a href="#pricing" class="text-sm font-medium text-charcoal/70 hover:text-navy transition-colors">Pricing</a>
-          <a href="#faq" class="text-sm font-medium text-charcoal/70 hover:text-navy transition-colors">FAQ</a>
+          <a href="#how-it-works" class="text-sm font-medium text-white/80 hover:text-white nav-link transition-colors duration-300">How It Works</a>
+          <a href="#gallery" class="text-sm font-medium text-white/80 hover:text-white nav-link transition-colors duration-300">Gallery</a>
+          <a href="#pricing" class="text-sm font-medium text-white/80 hover:text-white nav-link transition-colors duration-300">Pricing</a>
+          <a href="#faq" class="text-sm font-medium text-white/80 hover:text-white nav-link transition-colors duration-300">FAQ</a>
           <a href="#contact" class="inline-flex items-center px-5 py-2.5 bg-teal text-white text-sm font-semibold rounded-lg hover:bg-teal-dark transition-colors">Get Started</a>
         </div>
 
         <!-- Mobile Menu Button -->
-        <button id="mobile-menu-btn" class="md:hidden p-2 text-navy" aria-label="Open menu">
+        <button id="mobile-menu-btn" class="md:hidden p-2 text-white nav-menu-btn transition-colors duration-300" aria-label="Open menu">
           <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path id="menu-icon" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
           </svg>
@@ -82,10 +82,10 @@
       <!-- Mobile Nav -->
       <div id="mobile-menu" class="hidden md:hidden pb-4">
         <div class="flex flex-col gap-3">
-          <a href="#how-it-works" class="text-sm font-medium text-charcoal/70 hover:text-navy py-2">How It Works</a>
-          <a href="#gallery" class="text-sm font-medium text-charcoal/70 hover:text-navy py-2">Gallery</a>
-          <a href="#pricing" class="text-sm font-medium text-charcoal/70 hover:text-navy py-2">Pricing</a>
-          <a href="#faq" class="text-sm font-medium text-charcoal/70 hover:text-navy py-2">FAQ</a>
+          <a href="#how-it-works" class="text-sm font-medium text-white/80 hover:text-white nav-link py-2 transition-colors duration-300">How It Works</a>
+          <a href="#gallery" class="text-sm font-medium text-white/80 hover:text-white nav-link py-2 transition-colors duration-300">Gallery</a>
+          <a href="#pricing" class="text-sm font-medium text-white/80 hover:text-white nav-link py-2 transition-colors duration-300">Pricing</a>
+          <a href="#faq" class="text-sm font-medium text-white/80 hover:text-white nav-link py-2 transition-colors duration-300">FAQ</a>
           <a href="#contact" class="inline-flex items-center justify-center px-5 py-2.5 bg-teal text-white text-sm font-semibold rounded-lg hover:bg-teal-dark transition-colors">Get Started</a>
         </div>
       </div>
@@ -93,50 +93,44 @@
   </nav>
 
   <!-- ========== HERO ========== -->
-  <section class="relative pt-28 md:pt-36 pb-16 md:pb-24 overflow-hidden">
-    <div class="absolute inset-0 bg-gradient-to-br from-navy/5 to-transparent"></div>
-    <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
-        <!-- Copy -->
-        <div class="fade-in">
-          <div class="inline-flex items-center gap-2 px-3 py-1.5 bg-gold/10 border border-gold/20 rounded-full mb-6">
-            <span class="w-2 h-2 bg-gold rounded-full"></span>
-            <span class="text-xs font-semibold text-navy uppercase tracking-wider">For Home Counties Estate Agents</span>
-          </div>
-          <h1 class="font-display text-4xl md:text-5xl lg:text-6xl font-bold text-navy leading-tight mb-6">
-            Show Buyers the <span class="text-gold">Potential.</span><br>
-            Sell Properties <span class="text-gold">Faster.</span>
-          </h1>
-          <p class="text-lg text-charcoal/70 leading-relaxed mb-8 max-w-lg">
-            AI-powered renovation visualisations that transform tired listings into aspirational homes. Before &amp; after renders plus cinematic motion videos, delivered in 48 hours.
-          </p>
-          <div class="flex flex-col sm:flex-row gap-4">
-            <a href="#contact" class="inline-flex items-center justify-center px-7 py-3.5 bg-teal text-white font-semibold rounded-lg hover:bg-teal-dark transition-colors shadow-lg shadow-teal/20">
-              Get Started
-              <svg class="ml-2 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
-            </a>
-            <a href="#demo" class="inline-flex items-center justify-center px-7 py-3.5 border-2 border-navy/20 text-navy font-semibold rounded-lg hover:border-navy/40 transition-colors">
-              <svg class="mr-2 w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
-              Watch Demo
-            </a>
-          </div>
-        </div>
+  <section id="hero" class="relative min-h-screen flex items-center overflow-hidden">
+    <!-- Background Video -->
+    <video
+      class="absolute inset-0 w-full h-full object-cover"
+      autoplay
+      muted
+      loop
+      playsinline
+      poster="assets/video/demo-poster.jpg"
+    >
+      <source src="assets/video/demo.mp4" type="video/mp4">
+    </video>
+    <!-- Dark Overlay -->
+    <div class="absolute inset-0 bg-navy/60"></div>
 
-        <!-- Hero Video -->
-        <div class="fade-in relative">
-          <div class="rounded-2xl overflow-hidden shadow-2xl border border-cream-dark">
-            <video
-              class="w-full"
-              autoplay
-              muted
-              loop
-              playsinline
-              poster="assets/video/demo-poster.jpg"
-            >
-              <source src="assets/video/demo.mp4" type="video/mp4">
-            </video>
-          </div>
-          <p class="text-xs text-charcoal/50 mt-3 text-center italic">*Renders are artist's impressions of potential renovation</p>
+    <!-- Foreground Content -->
+    <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-32 md:py-40">
+      <div class="max-w-2xl fade-in">
+        <div class="inline-flex items-center gap-2 px-3 py-1.5 bg-white/10 backdrop-blur-sm border border-white/20 rounded-full mb-6">
+          <span class="w-2 h-2 bg-gold rounded-full"></span>
+          <span class="text-xs font-semibold text-white uppercase tracking-wider">For Home Counties Estate Agents</span>
+        </div>
+        <h1 class="font-display text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight mb-6">
+          Show Buyers the <span class="text-gold">Potential.</span><br>
+          Sell Properties <span class="text-gold">Faster.</span>
+        </h1>
+        <p class="text-lg text-white/80 leading-relaxed mb-8 max-w-lg">
+          AI-powered renovation visualisations that transform tired listings into aspirational homes. Before &amp; after renders plus cinematic motion videos, delivered in 48 hours.
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4">
+          <a href="#contact" class="inline-flex items-center justify-center px-7 py-3.5 bg-teal text-white font-semibold rounded-lg hover:bg-teal-dark transition-colors shadow-lg shadow-teal/20">
+            Get Started
+            <svg class="ml-2 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+          </a>
+          <a href="#demo" class="inline-flex items-center justify-center px-7 py-3.5 border-2 border-white/30 text-white font-semibold rounded-lg hover:border-white/60 hover:bg-white/10 transition-colors">
+            <svg class="mr-2 w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+            Watch Demo
+          </a>
         </div>
       </div>
     </div>

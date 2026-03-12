@@ -69,9 +69,33 @@ img-comparison-slider::part(handle) {
   max-height: 300px;
 }
 
-/* ========== Nav Shadow on Scroll ========== */
+/* ========== Nav Transparent → Solid on Scroll ========== */
 #navbar.scrolled {
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border-bottom: 1px solid #E8E8E4;
   box-shadow: 0 1px 8px rgba(0, 0, 0, 0.08);
+}
+
+#navbar.scrolled .nav-brand {
+  color: #1B2A4A;
+}
+
+#navbar.scrolled .nav-link {
+  color: rgba(45, 45, 45, 0.7);
+}
+
+#navbar.scrolled .nav-link:hover {
+  color: #1B2A4A;
+}
+
+#navbar.scrolled .nav-menu-btn {
+  color: #1B2A4A;
+}
+
+#navbar.scrolled .nav-logo-box {
+  background: #1B2A4A;
 }
 
 /* ========== Form Focus States ========== */

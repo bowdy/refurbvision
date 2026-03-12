@@ -18,10 +18,13 @@ document.addEventListener('DOMContentLoaded', () => {
 
   fadeElements.forEach(el => observer.observe(el));
 
-  // ========== Navbar Shadow on Scroll ==========
+  // ========== Navbar Transparent → Solid on Scroll ==========
   const navbar = document.getElementById('navbar');
+  const hero = document.getElementById('hero');
+  const navThreshold = () => hero ? hero.offsetHeight - 100 : 10;
+
   window.addEventListener('scroll', () => {
-    if (window.scrollY > 10) {
+    if (window.scrollY > navThreshold()) {
       navbar.classList.add('scrolled');
     } else {
       navbar.classList.remove('scrolled');
