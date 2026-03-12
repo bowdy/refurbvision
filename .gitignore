@@ -9,3 +9,4 @@ CLAUDE.md
 Screenshot*.png
 *.md
 !README.md
+.vercel
